@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
+  
+  </head>
+  <body>
+	<p id="instructions">Press the button to make your little baby...</p> 
+        
+	<form> 
+     <input type="button" id="birthbutton" value="Birth it!" onclick="namePet(); buttonAppear();" />
+     <input type="button" id="growbutton" style="visibility: hidden" value="Grow the baby!" onclick="petGrow();" /> 
+     <input type="button" id="feedbutton" style="visibility: hidden" value="Feed the baby!" onclick="petFeed();" />
+     <input type="button" id="walkbutton" style="visibility: hidden" value="Walk the baby!" onclick="petWalkies();" />
+      
+     
+  </form> 
+  
+  <p id="petName"></p>
+  <p id="walk"></p>
+  <p id="feed"></p>
+  <p id="grow"></p>
+  <script src="index.js"></script>
+  </body>
+</html>
+
