@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>title</title>
+    <title>Virtual Pet</title>
   <!-- <link rel="stylesheet" href="stylesheet.css" type="text/css"> -->
   
   </head>
@@ -10,16 +10,16 @@
 	<p id="instructions">Press the button to make your little baby...</p> 
         
 	<form> 
-     <input type="button" id="birthbutton" value="Birth it!" onclick="namePet(); buttonAppear();" />
-     <input type="button" id="growbutton" style="visibility: hidden" value="Grow the baby!" onclick="petGrow();" /> 
-     <input type="button" id="feedbutton" style="visibility: hidden" value="Feed the baby!" onclick="petFeed();" />
-     <input type="button" id="walkbutton" style="visibility: hidden" value="Walk the baby!" onclick="petWalkies();" />
+     <input type="button" id="birthbutton" value="Meet baby!" onclick="namePet(); checkName(); buttonAppear();" />
+     <input type="button" id="growbutton" style="visibility: hidden" value="Grow baby!" onclick="checkPet(); petGrow();" /> 
+     <input type="button" id="feedbutton" style="visibility: hidden" value="Feed baby!" onclick="checkPet(); petFeed();" />
+     <input type="button" id="walkbutton" style="visibility: hidden" value="Walk baby!" onclick="checkPet(); petWalkies();" />
       
      
   </form> 
   
   <p id="petName"></p>
-  <p id="walk"></p>
+  <p id="dead"></p>
   <p id="feed"></p>
   <p id="grow"></p>
   <script src="index.js"></script>
